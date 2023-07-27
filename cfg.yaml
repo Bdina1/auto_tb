@@ -27,7 +27,7 @@ model:
   [
     [-1, 1, TB_object, ['add_image', 'input_image', None]],
     [-1, 1, Conv2d, [3, 64, 3, 1, 1]], # Line 0
-    [-1, 1, TB_object, ['add_image', 'conv2d_output', None]],
+    [-1, 1, TB_object, ['add_image', 'conv2d_output', None], [TB_object, 'add_image', 'input_image', None]],
     [-1, 1, MaxPool2d, [2, 2]], # Line 1
     [-1, 1, Flatten, [1]],
     [-1, 1, Linear, [1048576, 1]],
